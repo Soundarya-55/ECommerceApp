@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray"
+    tools:context=".activities.RegisterActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:layout_margin="15dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/textView_register_head"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Sign Up for get start"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/gif3"
+            android:layout_width="236dp"
+            android:layout_height="220dp"
+            android:layout_below="@id/textView_register_head"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="-2dp"
+            android:src="@drawable/gif3"
+            tools:layout_editor_absoluteX="105dp"
+            tools:layout_editor_absoluteY="88dp" />
+
+        <TextView
+            android:id="@+id/textView_register_full_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/gif3"
+            android:layout_marginTop="10dp"
+            android:text="Full Name*"
+            android:textColor="#555555"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/editText_register_full_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView_register_full_name"
+            android:layout_marginTop="-2dp"
+            android:background="@drawable/border"
+            android:hint="Enter your full name"
+            android:inputType="textPersonName"
+            android:textSize="16sp"
+            android:padding="6dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView_register_email"
+            android:layout_below="@id/editText_register_full_name"
+            android:text="Email ID*"
+            android:textColor="#555555"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText_register_email"
+            android:hint="Enter your email"
+            android:inputType="textEmailAddress"
+            android:textSize="16dp"
+            android:padding="6dp"
+            android:layout_below="@id/textView_register_email"
+            android:background="@drawable/border"/>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView_register_password"
+            android:layout_below="@id/editText_register_email"
+            android:text="Password*"
+            android:textColor="#555555"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"/>
+
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText_register_password"
+            android:hint="Enter your password"
+            android:inputType="textPassword"
+            android:textSize="16dp"
+            android:padding="6dp"
+            android:layout_below="@id/textView_register_password"
+            android:background="@drawable/border"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView_register_confirmpassword"
+            android:layout_below="@id/editText_register_password"
+            android:text="Confirm Password*"
+            android:textColor="#555555"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"/>
+
+        <EditText
+            android:id="@+id/editText_register_confirmpassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView_register_confirmpassword"
+            android:background="@drawable/border"
+            android:hint="Confirm your password"
+            android:inputType="textPassword"
+            android:padding="6dp"
+            android:textSize="16dp" />
+
+        <Button
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_register2"
+            android:layout_below="@id/editText_register_confirmpassword"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="45dp"
+            android:layout_marginRight="70dp"
+            android:background="@drawable/bg_view"
+            android:backgroundTint="@color/purple_200"
+            android:text="Sign up" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editText_register_email"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:elevation="10dp"
+            android:visibility="gone" />
+
+
+    </RelativeLayout>
+
+
+
+</ScrollView>
+
+
+
+
+
+
